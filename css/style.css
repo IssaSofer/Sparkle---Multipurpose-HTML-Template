@@ -178,6 +178,8 @@ header .container nav ul{
     background-color: yellow;
     position: absolute;
     top: 45px;
+    z-index: 10;
+    max-width: 100%;
 }
 
 header .container nav ul:before{
@@ -190,11 +192,14 @@ header .container nav ul:before{
     right: 0px;
 }
 
-@media (max-width: 614px){
+@media (max-width: 767px){
 
     header nav:hover ul{
-        right: 8px !important;
-        width: 420px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 515px;
+        z-index: 10;
     }
 }
 
@@ -229,6 +234,7 @@ header nav:hover  ul{
     background-image: url('../img/landing1.jpeg');
     background-size:cover;
     position: relative;
+    z-index: -1;
 }
 .landing:before{
     content: "";
