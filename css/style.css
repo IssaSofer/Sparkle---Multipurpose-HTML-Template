@@ -234,7 +234,6 @@ header nav:hover  ul{
     background-image: url('../img/landing1.jpeg');
     background-size:cover;
     position: relative;
-    z-index: -1;
 }
 .landing:before{
     content: "";
@@ -247,7 +246,7 @@ header nav:hover  ul{
 }
 
 .landing .text{
-    z-index: 999;
+    z-index: 1;
     position: absolute;
     left: 50%;
     top: 50%;
